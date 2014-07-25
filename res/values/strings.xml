@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ProWeather</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="show">Forecast</string>
+    <string name="input_text_hint">City</string>
+    <string name="no_network_alert_title">No network connection</string>
+    <string name="no_network_alert_ok">OK</string>
+    <string name="no_result_message">No results</string>
+    <string name="error_message">Error</string>
+
+</resources>

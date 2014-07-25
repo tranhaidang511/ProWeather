@@ -1,0 +1,415 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    tools:context="${packageName}.${activityClass}" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <EditText
+            android:id="@+id/input_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/input_text_hint"
+            android:inputType="text" />
+        <Button
+            android:id="@+id/suggest_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/show" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/date1"
+            android:layout_width="@dimen/date_width"
+            android:layout_height="match_parent"
+            android:text="月日"
+            android:textSize="@dimen/text_size" />        
+        <TextView
+            android:id="@+id/desc1"
+            android:layout_width="@dimen/desc_width"
+            android:layout_height="match_parent"
+            android:text="天気"
+            android:textSize="@dimen/text_size" />                
+        <TextView
+            android:id="@+id/windSpeed1"
+            android:layout_width="@dimen/wind_width"
+            android:layout_height="wrap_content"
+            android:text="風速"
+            android:textSize="@dimen/text_size" />
+        <TextView
+            android:id="@+id/minTemp1"
+            android:layout_width="@dimen/temp_width"
+            android:layout_height="wrap_content"
+            android:text="最低"
+            android:textSize="@dimen/text_size" />
+        <TextView
+            android:id="@+id/maxTemp1"
+            android:layout_width="@dimen/temp_width"
+            android:layout_height="wrap_content"
+            android:text="最高"
+            android:textSize="@dimen/text_size" />
+        <TextView
+            android:id="@+id/press1"
+            android:layout_width="@dimen/press_width"
+            android:layout_height="wrap_content"
+            android:text="気圧"
+            android:textSize="@dimen/text_size" />
+        <TextView
+            android:id="@+id/humid1"
+            android:layout_width="@dimen/humid_width"
+            android:layout_height="wrap_content"
+            android:text="湿度"
+            android:textSize="@dimen/text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/date2"
+            android:layout_width="@dimen/date_width"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textSize="@dimen/text_size" />       
+        <TextView
+            android:id="@+id/desc2"
+            android:layout_width="@dimen/desc_width"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textSize="@dimen/text_size" />                
+        <TextView
+            android:id="@+id/windSpeed2"
+            android:layout_width="@dimen/wind_width"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/text_size" />
+        <TextView
+            android:id="@+id/minTemp2"
+            android:layout_width="@dimen/temp_width"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/text_size" />
+        <TextView
+            android:id="@+id/maxTemp2"
+            android:layout_width="@dimen/temp_width"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/text_size" />
+        <TextView
+            android:id="@+id/press2"
+            android:layout_width="@dimen/press_width"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/text_size" />
+        <TextView
+            android:id="@+id/humid2"
+            android:layout_width="@dimen/humid_width"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/date3"
+            android:layout_width="@dimen/date_width"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textSize="@dimen/text_size" />       
+        <TextView
+            android:id="@+id/desc3"
+            android:layout_width="@dimen/desc_width"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textSize="@dimen/text_size" />                
+        <TextView
+            android:id="@+id/windSpeed3"
+            android:layout_width="@dimen/wind_width"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/text_size" />
+        <TextView
+            android:id="@+id/minTemp3"
+            android:layout_width="@dimen/temp_width"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/text_size" />
+        <TextView
+            android:id="@+id/maxTemp3"
+            android:layout_width="@dimen/temp_width"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/text_size" />
+        <TextView
+            android:id="@+id/press3"
+            android:layout_width="@dimen/press_width"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/text_size" />
+        <TextView
+            android:id="@+id/humid3"
+            android:layout_width="@dimen/humid_width"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/date4"
+            android:layout_width="@dimen/date_width"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textSize="@dimen/text_size" />       
+        <TextView
+            android:id="@+id/desc4"
+            android:layout_width="@dimen/desc_width"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textSize="@dimen/text_size" />                
+        <TextView
+            android:id="@+id/windSpeed4"
+            android:layout_width="@dimen/wind_width"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/text_size" />
+        <TextView
+            android:id="@+id/minTemp4"
+            android:layout_width="@dimen/temp_width"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/text_size" />
+        <TextView
+            android:id="@+id/maxTemp4"
+            android:layout_width="@dimen/temp_width"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/text_size" />
+        <TextView
+            android:id="@+id/press4"
+            android:layout_width="@dimen/press_width"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/text_size" />
+        <TextView
+            android:id="@+id/humid4"
+            android:layout_width="@dimen/humid_width"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/text_size" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/date5"
+            android:layout_width="@dimen/date_width"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textSize="@dimen/text_size" />       
+        <TextView
+            android:id="@+id/desc5"
+            android:layout_width="@dimen/desc_width"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textSize="@dimen/text_size" />                
+        <TextView
+            android:id="@+id/windSpeed5"
+            android:layout_width="@dimen/wind_width"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/text_size" />
+        <TextView
+            android:id="@+id/minTemp5"
+            android:layout_width="@dimen/temp_width"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/text_size" />
+        <TextView
+            android:id="@+id/maxTemp5"
+            android:layout_width="@dimen/temp_width"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/text_size" />
+        <TextView
+            android:id="@+id/press5"
+            android:layout_width="@dimen/press_width"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/text_size" />
+        <TextView
+            android:id="@+id/humid5"
+            android:layout_width="@dimen/humid_width"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/text_size" />
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/date6"
+            android:layout_width="@dimen/date_width"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textSize="@dimen/text_size" />       
+        <TextView
+            android:id="@+id/desc6"
+            android:layout_width="@dimen/desc_width"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textSize="@dimen/text_size" />                
+        <TextView
+            android:id="@+id/windSpeed6"
+            android:layout_width="@dimen/wind_width"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/text_size" />
+        <TextView
+            android:id="@+id/minTemp6"
+            android:layout_width="@dimen/temp_width"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/text_size" />
+        <TextView
+            android:id="@+id/maxTemp6"
+            android:layout_width="@dimen/temp_width"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/text_size" />
+        <TextView
+            android:id="@+id/press6"
+            android:layout_width="@dimen/press_width"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/text_size" />
+        <TextView
+            android:id="@+id/humid6"
+            android:layout_width="@dimen/humid_width"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/text_size" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/date7"
+            android:layout_width="@dimen/date_width"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textSize="@dimen/text_size" />       
+        <TextView
+            android:id="@+id/desc7"
+            android:layout_width="@dimen/desc_width"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textSize="@dimen/text_size" />                
+        <TextView
+            android:id="@+id/windSpeed7"
+            android:layout_width="@dimen/wind_width"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/text_size" />
+        <TextView
+            android:id="@+id/minTemp7"
+            android:layout_width="@dimen/temp_width"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/text_size" />
+        <TextView
+            android:id="@+id/maxTemp7"
+            android:layout_width="@dimen/temp_width"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/text_size" />
+        <TextView
+            android:id="@+id/press7"
+            android:layout_width="@dimen/press_width"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/text_size" />
+        <TextView
+            android:id="@+id/humid7"
+            android:layout_width="@dimen/humid_width"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/text_size" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/date8"
+            android:layout_width="@dimen/date_width"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textSize="@dimen/text_size" />       
+        <TextView
+            android:id="@+id/desc8"
+            android:layout_width="@dimen/desc_width"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textSize="@dimen/text_size" />                
+        <TextView
+            android:id="@+id/windSpeed8"
+            android:layout_width="@dimen/wind_width"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/text_size" />
+        <TextView
+            android:id="@+id/minTemp8"
+            android:layout_width="@dimen/temp_width"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/text_size" />
+        <TextView
+            android:id="@+id/maxTemp8"
+            android:layout_width="@dimen/temp_width"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/text_size" />
+        <TextView
+            android:id="@+id/press8"
+            android:layout_width="@dimen/press_width"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/text_size" />
+        <TextView
+            android:id="@+id/humid8"
+            android:layout_width="@dimen/humid_width"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/text_size" />
+    </LinearLayout>
+    
+</LinearLayout>
